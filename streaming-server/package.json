@@ -10,6 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "node-rtsp-stream": "0.0.3",
-    "ws": "^7.1.2"
+    "ws": "^3.3.1"
   }
 }
