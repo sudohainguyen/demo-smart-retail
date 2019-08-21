@@ -1,0 +1,7 @@
+{
+    "name": "Streaming",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./Streaming.js"
+  }
+  

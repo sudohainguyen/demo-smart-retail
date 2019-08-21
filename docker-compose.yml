@@ -1,0 +1,21 @@
+version: '3.6'
+services:
+  client:
+    container_name: retail_ui
+    build:
+      context: ./dashboard-ui
+      dockerfile: Dockerfile
+    environment: 
+      - NODE_ENV=production
+    expose: 
+      - 80
+  nginx:
+    container_name: nginx
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 80:80
+    depends_on:
+      - client

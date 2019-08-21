@@ -1,4 +1,6 @@
 import React from 'react';
+import DwellTime from './views/DwellTime/DwellTime';
+import CrowdCount from './views/CrowdCount/CrowdCount';
 
 const Breadcrumbs = React.lazy(() => import('./views/Base/Breadcrumbs'));
 const Cards = React.lazy(() => import('./views/Base/Cards'));
@@ -31,6 +33,9 @@ const Alerts = React.lazy(() => import('./views/Notifications/Alerts'));
 const Badges = React.lazy(() => import('./views/Notifications/Badges'));
 const Modals = React.lazy(() => import('./views/Notifications/Modals'));
 const Colors = React.lazy(() => import('./views/Theme/Colors'));
+const Streaming = React.lazy(() => import('./views/Streaming'));
+const Stats = React.lazy(() => import('./views/Stats'));
+const Security = React.lazy(() => import('./views/Security'));
 const Typography = React.lazy(() => import('./views/Theme/Typography'));
 const Widgets = React.lazy(() => import('./views/Widgets/Widgets'));
 const Users = React.lazy(() => import('./views/Users/Users'));
@@ -40,8 +45,13 @@ const User = React.lazy(() => import('./views/Users/User'));
 const routes = [
   { path: '/', exact: true, name: 'Home' },
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },
+  { path: '/streaming', name: 'Streaming', component: Streaming },
+  { path: '/stats', name: 'Stats', component: Stats},
+  { path: '/security', name: 'Security', component: Security },
+  { path: '/heatmaps', exact: true, name: 'Heatmaps', component: DwellTime },
+  { path: '/heatmaps/dwell', name: 'Dwell', component: DwellTime },
+  { path: '/heatmaps/crowd', name: 'Crowd', component: CrowdCount },
   { path: '/theme', exact: true, name: 'Theme', component: Colors },
-  { path: '/theme/colors', name: 'Colors', component: Colors },
   { path: '/theme/typography', name: 'Typography', component: Typography },
   { path: '/base', exact: true, name: 'Base', component: Cards },
   { path: '/base/cards', name: 'Cards', component: Cards },

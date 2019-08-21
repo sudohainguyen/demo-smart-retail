@@ -1,0 +1,7 @@
+{
+    "name": "CrowdCount",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./CrowdCount.js"
+  }
+  

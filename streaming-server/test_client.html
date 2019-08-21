@@ -8,13 +8,13 @@
 <body>
 
 <canvas></canvas>
-
+<!-- <div class="jsmpeg" data-url="ws://localhost:9999"></div> -->
 
 <script>
   var client = new WebSocket('ws://localhost:9999');
-  var canvas = document.querySelector('canvas');
+  var a = document.querySelector('canvas');
   var player = new jsmpeg(client, {
-    canvas: canvas 
+    canvas: a 
   });
 </script>
 </body>
