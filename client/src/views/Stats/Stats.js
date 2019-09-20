@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Bar, Doughnut, Line, Pie, Polar, Radar } from 'react-chartjs-2';
+import { Bar, Line } from 'react-chartjs-2';
 // import { Card, CardBody, CardColumns, CardHeader } from 'reactstrap';
 import { CustomTooltips } from '@coreui/coreui-plugin-chartjs-custom-tooltips';
 
@@ -11,8 +11,7 @@ import {
 	CardBody,
 	CardHeader,
   CardTitle,
-  CardColumns,
-	Col,
+  Col,
 	Row,
 } from 'reactstrap';
 import { getStyle, hexToRgba } from '@coreui/coreui/dist/js/coreui-utilities'
@@ -155,77 +154,8 @@ const bar = {
   ],
 };
 
-const doughnut = {
-  labels: [
-    'Red',
-    'Green',
-    'Yellow',
-  ],
-  datasets: [
-    {
-      data: [300, 50, 100],
-      backgroundColor: [
-        '#FF6384',
-        '#36A2EB',
-        '#FFCE56',
-      ],
-      hoverBackgroundColor: [
-        '#FF6384',
-        '#36A2EB',
-        '#FFCE56',
-      ],
-    }],
-};
 
-const pie = {
-  labels: [
-    'Red',
-    'Green',
-    'Yellow',
-  ],
-  datasets: [
-    {
-      data: [300, 50, 100],
-      backgroundColor: [
-        '#FF6384',
-        '#36A2EB',
-        '#FFCE56',
-      ],
-      hoverBackgroundColor: [
-        '#FF6384',
-        '#36A2EB',
-        '#FFCE56',
-      ],
-    }],
-};
 
-const polar = {
-  datasets: [
-    {
-      data: [
-        11,
-        16,
-        7,
-        3,
-        14,
-      ],
-      backgroundColor: [
-        '#FF6384',
-        '#4BC0C0',
-        '#FFCE56',
-        '#E7E9ED',
-        '#36A2EB',
-      ],
-      label: 'My dataset' // for legend
-    }],
-  labels: [
-    'Red',
-    'Green',
-    'Yellow',
-    'Grey',
-    'Blue',
-  ],
-};
 
 const options = {
   tooltips: {
