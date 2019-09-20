@@ -10,6 +10,11 @@ export default {
       // },
     },
     {
+      name: 'Streaming',
+      url: '/streaming',
+      icon: 'fa fa-video-camera',
+    },
+    {
       title: true,
       name: 'Detail',
       wrapper: {            // optional wrapper object
@@ -18,16 +23,6 @@ export default {
       },
       class: ''             // optional class names space delimited list for title item ex: "text-center"
     },
-    // {
-    //   name: 'Streaming',
-    //   url: '/streaming',
-    //   icon: 'fa fa-video-camera',
-    // },
-    // {
-    //   name: 'Security',
-    //   url: '/security',
-    //   icon: 'fa fa-shield',
-    // },
     {
       name: 'Heatmaps',
       icon: 'icon-puzzle',
@@ -49,6 +44,11 @@ export default {
       name: 'Stats',
       url: '/stats',
       icon: 'fa fa-bar-chart',
+    },
+    {
+      name: 'Security',
+      url: '/security',
+      icon: 'fa fa-shield',
     },
     // {
     //   title: true,

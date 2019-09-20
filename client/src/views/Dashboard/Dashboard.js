@@ -9,8 +9,7 @@ import {
 	CardHeader,
 	CardTitle,
 	Col,
-	Row,
-	CardColumns
+	Row
 } from 'reactstrap';
 import { CustomTooltips } from '@coreui/coreui-plugin-chartjs-custom-tooltips';
 import { getStyle, hexToRgba } from '@coreui/coreui/dist/js/coreui-utilities'
@@ -187,7 +186,7 @@ class Dashboard extends Component {
 					</Col>
 				</Row>
 				<Row>
-					<CardColumns className="cols-2">
+					<Col xs="12" sm="12" lg="6">
 						<Card>
 							<CardBody>
 								<Row>
@@ -201,6 +200,8 @@ class Dashboard extends Component {
 								</div>
 							</CardBody>
 						</Card>
+					</Col>
+					<Col xs="12" sm="12" lg="6">
 						<Card>
 							<CardBody>
 								<Row>
@@ -214,10 +215,10 @@ class Dashboard extends Component {
 								</div>
 							</CardBody>
 						</Card>
-					</CardColumns>
+					</Col>
 				</Row>
 				<Row>
-					<CardColumns className="cols-2">
+					<Col xs="12" sm="12" lg="6">
 						<Card>
 							<CardHeader>
 								<strong>Dwell Time Heatmap</strong>
@@ -228,6 +229,8 @@ class Dashboard extends Component {
 								</div>
 							</CardBody>
 						</Card>
+					</Col>
+					<Col xs="12" sm="12" lg="6">
 						<Card>
 							<CardHeader>
 								<strong>Crowd Counting Heatmapp</strong>
@@ -238,7 +241,7 @@ class Dashboard extends Component {
 								</div>
 							</CardBody>
 						</Card>
-					</CardColumns>
+					</Col>
 				</Row>
 			</div>
 			);
