@@ -22,6 +22,7 @@
     "core-js": "^3.1.4",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
+    "eslint": "^6.4.0",
     "flag-icon-css": "^3.3.0",
     "font-awesome": "^4.7.0",
     "jsmpeg": "^1.0.0",
